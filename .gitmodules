@@ -1,0 +1,3 @@
+[submodule "pykickstart"]
+	path = pykickstart
+	url = https://github.com/pykickstart/pykickstart.git
