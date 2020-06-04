@@ -36,11 +36,11 @@ Documentation for Python 3 library for manipulating kickstart files.
 %setup -q -n %{name}-%{version}/pykickstart
 
 %build
-make PYTHON=%{__python3}
+%py3_build
 
 %install
 rm -rf %{buildroot}
-make PYTHON=%{__python3} DESTDIR=%{buildroot} install
+%py3_install
 
 %files
 %defattr(-,root,root,-)
@@ -52,8 +52,8 @@ make PYTHON=%{__python3} DESTDIR=%{buildroot} install
 
 %files -n python3-pykickstart
 %defattr(-,root,root,-)
-%{python3_sitearch}/pykickstart
-%{python3_sitearch}/pykickstart*.egg-info
+%{python3_sitelib}/pykickstart
+%{python3_sitelib}/pykickstart*.egg-info
 
 %files -n python3-pykickstart-docs
 %defattr(-,root,root,-)
