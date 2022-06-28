@@ -3,7 +3,7 @@ Summary:    Python utilities for manipulating kickstart files
 Version:    3.25
 Release:    1
 License:    GPLv2 and MIT
-URL:        http://fedoraproject.org/wiki/pykickstart
+URL:        https://github.com/sailfishos/pykickstart
 BuildArch:  noarch
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires: gettext
